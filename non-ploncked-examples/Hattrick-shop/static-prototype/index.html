@@ -1,0 +1,138 @@
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1.toptitle {
+  color: maroon;
+  text-align: center;
+}
+
+h2.subtitle {
+  color: maroon;
+  text-align: center;
+}
+
+.price {
+  color: black;
+    display: block;
+  margin-left: 75px;
+  margin-right: auto;
+}
+
+
+#logo { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  height: auto; 
+}
+
+.hat {
+  display: block;
+  margin-left: 20px;
+  margin-right: auto;
+  max-width: 200px;
+  height: auto; 
+}
+
+#mainworkarea {
+  color: maroon;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+</style>
+</head>
+<body>
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+<img id="logo" hx-get="fooled.html" hx-target="this" hx-swap="outerHTML" src="bunnyhat.png" alt="Bunnyhat from https://www.cleanpng.com/png-watercolor-paint-wet-ink-7326653/"/>
+<h1 class="toptitle">Hattrick hat shop</h1>
+<h2 class="subtitle">A place full of hat surprizes</h2>
+<div id="mainworkarea">
+	<h3>Choose gender:</h3>
+	<div >
+		<svg width="800" height="70">
+			<g id="genderselection" hx-get="malecolorpicker.html" hx-target="#colorselection" hx-swap="outerHTML">
+				<rect x="30" y="0" rx="20" ry="20" width="150" height="50" style="fill:rgb(150,150,255);stroke:black;stroke-width:1;opacity:1" />
+				<text x="80" y="30" fill="black">Male</text>
+			</g>
+			<g id="genderselection" hx-get="femalecolorpicker.html" hx-trigger="click" hx-target="#colorselection" hx-swap="outerHTML">
+				<rect x="200" y="0" rx="20" ry="20" width="150" height="50" style="fill:rgb(255,150,150);stroke:black;stroke-width:1;opacity:1" />
+				<text x="250" y="30" fill="black">Female</text>
+			</g>
+			<g id="genderselection" hx-get="unisexcolorpicker.html" hx-trigger="click" hx-target="#colorselection" hx-swap="outerHTML">
+				<rect x="370" y="0" rx="20" ry="20" width="150" height="50" style="fill:rgb(150,150,150);stroke:black;stroke-width:1;opacity:1" />
+				<text x="420" y="30" fill="black">Unisex</text>
+			</g>
+		</svg>
+	</div>
+	<div id="colorselection"></div>
+	<div id="hatselection"></div>
+	
+	<div id="shoppingcart">
+		<div id="shoppingcarttitle"></div>
+		<div id="shoppingcartlist"></div>
+		<div id="shoppingcartsum"></div>
+	</div>	
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>	
+	<div id="alternativeflowscenarios">
+	</div>		
+</div>
+</body>

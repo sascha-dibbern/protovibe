@@ -1,0 +1,14 @@
+<div>
+<img id="greenhatselection" hx-get="man-greenhat-in-shoppingcart.html" hx-trigger="click" hx-target="#shoppingcartlist" hx-swap="beforeend"
+       class="hat" src="greenhat.png" alt="Green hat image from https://www.cleanpng.com/png-st-patricks-day-hat-green-leprechaun-hat-with-sham-7957096/"/>
+	   <div class="price">xyz$</div>
+</div>
+
+<div id="alternativeflowscenarios" hx-swap-oob="true">
+<h2>Select to enable alternative flows</h2>
+<g hx-get="man-greenhat-selection-soldout.html" hx-trigger="click" hx-target="#hatselection" hx-swap="outerHTML">
+  <text x="250" y="30" fill="black">
+    Requirement 1.2.3: Handling of sold out items while customer selects hat  (Hint: click green hat afterwards)
+  </text>
+</g>
+</div>
