@@ -1,0 +1,14 @@
+<div id="hatselection" hx-swap-oob="true"></div>
+
+<div id="colorselection">
+<h3>Pick dominant color for a man's hat</h3>
+<div>
+	<svg width="800" height="70">
+		<g id="greencolor" hx-get="man-greenhat-selection@plonck" hx-trigger="click" hx-target="#hatselection" hx-swap="innerHTML">
+			<rect x="30" y="0" rx="20" ry="20" width="50" height="50" style="fill:rgb(0,255,0);stroke:black;stroke-width:1;opacity:1" />
+		</g>
+		<g id="yellowcolor" hx-get="man-yellowhat-selection@plonck" hx-trigger="click" hx-target="#hatselection" hx-swap="innerHTML">
+			<rect x="90" y="0" rx="20" ry="20" width="50" height="50" style="fill:rgb(255,255,0);stroke:black;stroke-width:1;opacity:1" />
+		</g>
+	</svg>	
+</div>			
